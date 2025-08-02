@@ -7,18 +7,17 @@
  *
  * @author tobats
  */
-public class calculator extends javax.swing.JFrame {
+public class Quotient extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(calculator.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Quotient.class.getName());
 
     /**
-     * Creates new form calculator
+     * Creates new form Quotient
      */
-    public calculator() {
+    public Quotient() {
         initComponents();
         this.setLocationRelativeTo(null);
         jTextField3.setEditable(false);
-        
     }
 
     /**
@@ -30,19 +29,23 @@ public class calculator extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        txtnum1 = new javax.swing.JTextField();
-        txtnum2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
+        txtnum2 = new javax.swing.JTextField();
+        txtnum1 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel3.setText("CALCULATOR");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Number 1 :");
@@ -60,15 +63,9 @@ public class calculator extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 120, 30));
-        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 120, 30));
-        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 120, 30));
-
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 120, 30));
+        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 120, 30));
+        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 120, 30));
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Difference");
@@ -89,7 +86,7 @@ public class calculator extends javax.swing.JFrame {
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 110, 40));
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setText("Quotient");
+        jButton5.setText("Sum");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -97,22 +94,16 @@ public class calculator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 110, 40));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel3.setText("CALCULATOR");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int num1 = Integer.parseInt(txtnum1.getText());
         int num2 = Integer.parseInt(txtnum2.getText());
-        int sum = num1 + num2;
-        
-        jTextField3.setText("The sum is " + sum );
-        
-        
-        
+        int sum = num1 / num2;
+
+        jTextField3.setText("The quotient is " + sum );
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -132,10 +123,6 @@ public class calculator extends javax.swing.JFrame {
         quo.show();
         
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-
-    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,7 +146,7 @@ public class calculator extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new calculator().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Quotient().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
