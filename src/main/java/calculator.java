@@ -61,15 +61,15 @@ public class calculator extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 120, 30));
-        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 120, 30));
-        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 120, 30));
+        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 140, 30));
+        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 140, 30));
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 120, 30));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 140, 30));
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Difference");
@@ -99,8 +99,8 @@ public class calculator extends javax.swing.JFrame {
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 110, 40));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel3.setText("CALCULATOR");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+        jLabel3.setText("ADDITION CALCULATOR");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("CLEAR");
@@ -150,6 +150,7 @@ public class calculator extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         txtnum1.setText("");
         txtnum2.setText("");
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

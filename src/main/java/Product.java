@@ -45,8 +45,8 @@ public class Product extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel3.setText("CALCULATOR");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, -1, -1));
+        jLabel3.setText("PRODUCT CALCULATOR");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 230, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Number 1 :");
@@ -64,9 +64,9 @@ public class Product extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 120, 30));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 120, 30));
-        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 120, 30));
-        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 120, 30));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 140, 30));
+        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 140, 30));
+        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 140, 30));
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton3.setText("Difference");
@@ -123,8 +123,8 @@ public class Product extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Product prod = new Product();
-        prod.show();
+        calculator sum = new calculator();
+        sum.show();
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -137,6 +137,7 @@ public class Product extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         txtnum1.setText("");
         txtnum2.setText("");
+        jTextField3.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
