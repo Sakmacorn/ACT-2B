@@ -66,6 +66,12 @@ public class Product extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 120, 30));
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 140, 30));
         getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 140, 30));
+
+        txtnum1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtnum1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 140, 30));
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -139,6 +145,10 @@ public class Product extends javax.swing.JFrame {
         txtnum2.setText("");
         jTextField3.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void txtnum1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnum1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtnum1ActionPerformed
 
     /**
      * @param args the command line arguments

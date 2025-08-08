@@ -18,6 +18,7 @@ public class Reviewer extends javax.swing.JFrame {
      */
     public Reviewer() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -44,7 +45,7 @@ public class Reviewer extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 18)); // NOI18N
         jLabel1.setText("GRADES CALCULATION");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, -1, -1));
 

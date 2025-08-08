@@ -17,6 +17,7 @@ public class Reviewer2 extends javax.swing.JFrame {
      */
     public Reviewer2() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -37,7 +38,7 @@ public class Reviewer2 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Age Verification");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("VERIFY");
@@ -46,8 +47,8 @@ public class Reviewer2 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 100, 30));
-        getContentPane().add(txtage, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, 140, 50));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 100, 30));
+        getContentPane().add(txtage, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 140, 50));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -56,15 +57,15 @@ public class Reviewer2 extends javax.swing.JFrame {
         int age = Integer.parseInt(txtage.getText());
         if (age >= 18 && age <= 100)
         {
-            JOptionPane.showMessageDialog(null, "Valid Age!");
+            JOptionPane.showMessageDialog(null, "Able to Vote!","VOTING", JOptionPane.INFORMATION_MESSAGE);
         }
         else if (age <=17 && age <= 5)
         {
-            JOptionPane.showMessageDialog(null, "Invalid! UnderAge Detected!");
+                JOptionPane.showMessageDialog(null, "Unable to Vote","VOTING", JOptionPane.INFORMATION_MESSAGE);
         }
         
         else
-            JOptionPane.showMessageDialog(null, "Invalid Information!");
+            JOptionPane.showMessageDialog(null, "Invalid  Information!","VOTING", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
