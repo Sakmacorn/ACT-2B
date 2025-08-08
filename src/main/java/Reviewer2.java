@@ -48,6 +48,12 @@ public class Reviewer2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 100, 30));
+
+        txtage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtageActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtage, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, 140, 50));
 
         pack();
@@ -67,6 +73,10 @@ public class Reviewer2 extends javax.swing.JFrame {
         else
             JOptionPane.showMessageDialog(null, "Invalid  Information!","VOTING", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtageActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtageActionPerformed
 
     /**
      * @param args the command line arguments

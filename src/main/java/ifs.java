@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -14,6 +17,7 @@ public class ifs extends javax.swing.JFrame {
      */
     public ifs() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -25,21 +29,122 @@ public class ifs extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtplayer1 = new javax.swing.JTextField();
+        txtplayer2 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 532, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 526, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel1.setText("Player 1 :");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setText("Player 2 :");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+        getContentPane().add(txtplayer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 150, 30));
+        getContentPane().add(txtplayer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 150, 30));
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
+        jLabel3.setText("ROCK, PAPER, SCISSORS");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 270, -1));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel4.setText("[1] Rock");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setText("[2] Paper");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel6.setText("[3] Scissors");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, -1, -1));
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setText("VS");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 240, 150, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int player1 = Integer.parseInt(txtplayer1.getText());
+        int player2 = Integer.parseInt(txtplayer2.getText());
+
+        if (player1 == 1 && player2 == 1)
+        {
+            JOptionPane.showConfirmDialog(null, "DRAW", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 1 && player2 == 2)
+        {
+            JOptionPane.showConfirmDialog(null, "PLAYER 2 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 1 && player2 == 3)
+        {
+            JOptionPane.showConfirmDialog(null, "PLAYER 1 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 2 && player2 == 1)
+        {
+            JOptionPane.showConfirmDialog(null, "PLAYER 1 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 2 && player2 == 2)
+        {
+            JOptionPane.showConfirmDialog(null, "DRAW", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 2 && player2 == 3)
+        {
+            JOptionPane.showConfirmDialog(null, "PLAYER 2 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 3 && player2 == 1)
+        {
+            JOptionPane.showConfirmDialog(null, "PLAYER 1 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 3 && player2 == 2)
+        {
+            JOptionPane.showConfirmDialog(null, "PLAYER 2 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else if (player1 == 3 && player2 == 3)
+        {
+            JOptionPane.showConfirmDialog(null, "DRAW", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        }
+        
+        else
+            JOptionPane.showConfirmDialog(null, "INCORRECT INPUT!", "RPS", JOptionPane.INFORMATION_MESSAGE);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +182,14 @@ public class ifs extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField txtplayer1;
+    private javax.swing.JTextField txtplayer2;
     // End of variables declaration//GEN-END:variables
 }
