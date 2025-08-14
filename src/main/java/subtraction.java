@@ -64,6 +64,12 @@ public class subtraction extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 120, 30));
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 140, 30));
         getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 140, 140, 30));
         getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 90, 140, 30));
@@ -139,6 +145,10 @@ public class subtraction extends javax.swing.JFrame {
         txtnum2.setText("");
         jTextField3.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments
