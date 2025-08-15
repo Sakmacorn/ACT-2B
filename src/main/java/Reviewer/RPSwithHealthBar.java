@@ -100,9 +100,7 @@ public class RPSwithHealthBar extends javax.swing.JFrame {
         txtplayer1.setText("");
         txtplayer2.setText("");
         
-        if (player1 == 1 && player2 == 2 ||
-            player1 == 2 && player2 == 2 ||
-            player1 == 3 && player2 == 3){
+        if (player1 == player2){
             
             JOptionPane.showMessageDialog(null, "Draw", "Rock, Paper and Scissors", JOptionPane.INFORMATION_MESSAGE);
         }
@@ -135,6 +133,7 @@ public class RPSwithHealthBar extends javax.swing.JFrame {
             health2 = 5;
         }
         else if (health2 == 0){
+            JOptionPane.showMessageDialog(null, "Player 2 wins the game!", "Game over!", JOptionPane.INFORMATION_MESSAGE);
             health1 = 5;
             health2 = 5;
         }
