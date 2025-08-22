@@ -171,7 +171,7 @@ public class ifs extends javax.swing.JFrame {
         
         else if (player1 == 3 && player2 == 1)
         {
-            JOptionPane.showMessageDialog(null, "PLAYER 1 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "PLAYER 2 WINS", "RPS", JOptionPane.INFORMATION_MESSAGE);
         }
         
         else if (player1 == 3 && player2 == 2)
