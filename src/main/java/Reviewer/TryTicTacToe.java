@@ -209,7 +209,7 @@ public class TryTicTacToe extends javax.swing.JFrame {
             
                 JOptionPane.showMessageDialog(null, "PLAYER 2 WINS", "TIC TAC TOE", JOptionPane.INFORMATION_MESSAGE);
             if (score >= 5){
-                JOptionPane.showMessageDialog(null, "PLAYER 2 WINS", "TIC TAC TOE", JOptionPane.showMessageDialog.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "PLAYER 2 WINS", "TIC TAC TOE", JOptionPane.INFORMATION_MESSAGE);
             }
         }
         else {
