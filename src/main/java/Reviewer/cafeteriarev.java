@@ -17,12 +17,12 @@ public class cafeteriarev {
     public static void main(String args[]) {
         Scanner input = new Scanner (System.in);
         System.out.println("Cafeteria");
-        System.out.println("Snacks");
-        System.out.println("[1] Hotdog [P25.00]");
-        System.out.println("[2] Siomai [P30.00]");
-        System.out.println("Drinks");
-        System.out.println("[1] Coke [P15.00]");
-        System.out.println("[2] Water [P10.00]");
+        System.out.println("[1] Snacks");
+        System.out.println("Hotdog [P25.00]");
+        System.out.println("Siomai [P30.00]");
+        System.out.println("[2] Drinks");
+        System.out.println("Coke [P15.00]");
+        System.out.println("Water [P10.00]");
         System.out.println("Enter your Choice: ");
         int choose = input.nextInt();
         
@@ -76,7 +76,7 @@ public class cafeteriarev {
             System.out.println("Your Change is:  P" + change);
         }
         else if (choose == 2){
-             System.out.println("[1] Coke");
+            System.out.println("[1] Coke");
             System.out.println("[2] Water");
             int Coke = 15;
             int Water = 10;
@@ -131,3 +131,4 @@ public class cafeteriarev {
         
     }
 }
+
