@@ -12,7 +12,8 @@ public class ArrayLisT {
 //    An ArrayList is a resizable array that can grow as needed.
 //    It allows you to store elements and access them by index.
     
-    ArrayList<String> cars = new ArrayList<String>();
+    public static void main(String[] args) {
+		ArrayList<String> cars = new ArrayList<String>();
     cars.add("Volvo");
     cars.add("BMW");
     cars.add("Ford");

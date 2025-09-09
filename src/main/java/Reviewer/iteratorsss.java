@@ -10,7 +10,8 @@ import java.util.Iterator;
  * @author Stephanie Castro
  */
 public class iteratorsss {
-    // Create an ArrayList of Strings
+    public static void main(String[] args) {
+	// Create an ArrayList of Strings
     ArrayList<String> cars = new ArrayList<String>();
     cars.add("Volvo");
     cars.add("BMW");
@@ -25,4 +26,5 @@ public class iteratorsss {
       System.out.println(it.next());
       
     }
+	}
 }

@@ -10,6 +10,8 @@ import java.util.HashMap;
  */
 public class HashMaP {
     // Create a HashMap object called capitalCities
+    public static void main(String[] args) {
+	 // Create a HashMap object called capitalCities
     HashMap<String, String> capitalCities = new HashMap<String, String>();
 
     // Add keys and values (Country, City)

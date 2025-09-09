@@ -11,7 +11,8 @@ import java.util.HashSet;
 public class HasHSeT {   
 //A HashSet is a collection where every element is unique - no duplicates are allowed.
     
-    HashSet<String> cars = new HashSet<String>();
+    public static void main(String[] args) {
+		HashSet<String> cars = new HashSet<String>();
     cars.add("Volvo");
     cars.add("BMW");
     cars.add("Ford");
