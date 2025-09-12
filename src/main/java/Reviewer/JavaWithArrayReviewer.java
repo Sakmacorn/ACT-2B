@@ -13,7 +13,6 @@ public class JavaWithArrayReviewer {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
         HashMap<String, Integer> snacks = new HashMap<>();
         snacks.put("Hotdog", 15);
         snacks.put("Siomai", 35);
@@ -22,6 +21,7 @@ public class JavaWithArrayReviewer {
         drinks.put("Coke", 15);
         drinks.put("Water", 10);
 
+        
         double cash;
         double remainingCash;
 

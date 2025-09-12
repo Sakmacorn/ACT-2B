@@ -54,7 +54,7 @@ public class example {
             System.out.println("Available Items: ");
             for (int i = 0; i < itemList.size(); i++) { 
                 String item = itemList.get(i);
-                System.out.println("[" + (i + 1) + "] " + item +   " [P" + selectedCategory.get(item) + ".00]");
+                System.out.println(" [" + (i + 1) + "] " + item +   " [P" + selectedCategory.get(item) + ".00]");
             }
 
             int itemChoice = 0;
@@ -73,16 +73,27 @@ public class example {
             int price = selectedCategory.get(selectedItem);
             
             System.out.println(selectedItem + "Price is [P" + price + ".00]");
+            
             System.out.print("Enter Quantity: ");
             int quantity = input.nextInt();
-//            Calculation na dito
+//            Nag dagdag ako ng discount after mag input ng quantity yung user
             int subtotal = price * quantity;
+            
+            double discount = 0;
+            
+            if (quantity >= 10){
+                discount = subtotal - 0.05;
+                System.out.println("You Get a 5% Discount!");
+            }
+//            Calculation na dito
+            
             double vat = subtotal * 0.12;
-            double total = subtotal + vat;
+            double totalbeforediscount = subtotal + vat;
+            double totalafterdiscount = totalbeforediscount - discount;
             
             System.out.printf("Subtotal: P%.2f\n", (double) subtotal);
             System.out.printf("VAT (12%%): P%.2f\n", vat);
-            System.out.printf("Total: P%.2f\n", total);
+            System.out.printf("Total: P%.2f\n", totalafterdiscount);
             
 //            Cash Looping
             double cash;
@@ -90,12 +101,12 @@ public class example {
                 System.out.print("Enter your cash: ");
                 cash = input.nextDouble();
                 
-                if (cash < total){
+                if (cash < totalafterdiscount){
                     System.out.println("Insufficient Amount! Please try Again!");
                 }
-            } while (cash < total);
+            } while (cash < totalafterdiscount);
                 
-            double change = cash - total;
+            double change = cash - totalafterdiscount;
             System.out.printf("Your change is: P%.2f\n", change);
             
             System.out.println("Thank you for purchasing " + selectedItem +"!");
